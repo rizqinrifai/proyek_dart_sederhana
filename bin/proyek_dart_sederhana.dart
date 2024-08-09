@@ -21,6 +21,18 @@ void main(List<String> arguments) {
   var secondNumber = 12;
   var sum = firstNumber + secondNumber;
 
+
+  var isRaining = true;
+
+  print('Prepare before going to office.');
+  if (isRaining) {
+    print("Oh. It's raining, bring an umbrella.");
+  }
+  print('Going to the office.');
+
+
+  
+
   print(sum);
   print('Hello world: ${proyek_dart_sederhana.calculate()}!');
   print(greetings);
@@ -52,6 +64,16 @@ void variable() {
 
   buyAMeal(favoriteFood!);
 
+  var openHours = 8;
+  var closedHours = 21;
+  var now = 17;
+
+  if (now > openHours && now < closedHours) {
+    print("Hello, we're open");
+  } else {
+    print("Sorry, we've closed");
+  }
+
 
   print(name);
   print(age);
@@ -64,3 +86,4 @@ void variable() {
 void buyAMeal(String favoriteFood) {
   print('I bought a $favoriteFood');
 }
+
